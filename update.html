@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>NAMA FILM</h1>
+    <form action="/aksiupdate" method="post" >
+        <input type="hidden" name="id" placeholder="Enter film" value="{{ value[0] }}" ><br>
+        <input type="text" name="nama" placeholder="Enter nama" value="{{ value[1] }}" ><br>
+        <input type="number" name="durasi" min="1" max="3"  placeholder="Enter durasi" value="{{ value[2] }}"><br>
+        <input type="text" name="genre" placeholder="Enter genre" value="{{ value[3] }}"><br>
+        <input type="text" name="asal" placeholder="Enter asal" value="{{ value[4] }}"><br>
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}

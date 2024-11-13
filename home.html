@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block konten %}
+    <h1>NAMA FILM</h1>
+    <form action="/simpan" method="post">
+        <input type="text" name="nama" placeholder="enter nama.."><br>
+        <input type="number" name="durasi" min="1h" max="3h" placeholder="enter durasi.."><br>
+        <textarea name="genre" placeholder="enter genre.." ></textarea><br>
+        <textarea name="asal" placeholder="enter asal.."></textarea><br>
+        <button type="submit">SEND</button>
+    </form>
+{% endblock %}
+
+DI GITHUB URUTAN 2 DRI BAWAH
